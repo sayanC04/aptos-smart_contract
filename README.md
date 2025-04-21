@@ -48,5 +48,37 @@ This project implements a simple voting system on the Aptos blockchain using Mov
      aptos move run --function-id 0xc65df22fe8951577e17c07bd2f87193accf91f501055287e9bdbcaecccf35d17::SimpleVoting::vote --args <poll_creator_address> <option_index>
      ```
 
+## Contract Details
+### Module Address
+`0xc65df22fe8951577e17c07bd2f87193accf91f501055287e9bdbcaecccf35d17`
+
+### Functions
+- **create_poll**  
+  Creates a new voting poll with the specified options.  
+  **Parameters:**  
+  - `creator`: The signer of the transaction.  
+  - `options`: A vector of options (as byte arrays) for the poll.
+
+- **vote**  
+  Casts a vote for a specific option in the poll.  
+  **Parameters:**  
+  - `voter`: The signer of the transaction.  
+  - `poll_creator`: The address of the poll creator.  
+  - `option_index`: The index of the option to vote for.
+
+### Error Codes
+- `E_ALREADY_VOTED (1)`: The voter has already voted in this poll.
+- `E_VOTING_CLOSED (2)`: The poll is no longer active.
+
+### Structures
+- **VotingPoll**  
+  Stores the details of a voting poll.  
+  **Fields:**  
+  - `creator`: The address of the poll creator.  
+  - `options`: A vector of options for the poll.  
+  - `votes`: A vector of vote counts for each option.  
+  - `voters`: A vector of addresses of users who have voted.  
+  - `is_active`: A boolean indicating if the poll is active.
+
 ## License
 This project is licensed under the MIT License.
