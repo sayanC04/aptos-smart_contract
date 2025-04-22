@@ -52,6 +52,8 @@ This project implements a simple voting system on the Aptos blockchain using Mov
 ### Module Address
 `0xc65df22fe8951577e17c07bd2f87193accf91f501055287e9bdbcaecccf35d17`
 
+![Transaction Overview](attachments/transaction-overview.png) <!-- Replace with the actual relative path if different -->
+
 ### Functions
 - **create_poll**  
   Creates a new voting poll with the specified options.  
