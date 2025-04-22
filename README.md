@@ -61,7 +61,7 @@ To provide a decentralized, transparent, and secure voting mechanism that can be
 ### Module Address
 `0xc65df22fe8951577e17c07bd2f87193accf91f501055287e9bdbcaecccf35d17`
 
-![Transaction Overview](.aptos/attachments/transaction.png) <!-- Ensure the file exists in the .aptos/attachments folder -->
+![Transaction Overview](sources/attachments/transaction.png) <!-- Ensure the file exists in the sources/attachments folder -->
 
 ### Functions
 - **create_poll**  
