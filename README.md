@@ -3,6 +3,15 @@
 ## Description
 This project implements a simple voting system on the Aptos blockchain using Move. It allows users to create polls with multiple options and cast votes securely. The contract ensures that each voter can only vote once per poll and that voting is only allowed while the poll is active.
 
+## Vision
+To provide a decentralized, transparent, and secure voting mechanism that can be used for various applications, including community decision-making, surveys, and governance.
+
+## Future Scope
+- **Result Calculation**: Add functionality to calculate and display poll results.
+- **Poll Expiry**: Introduce an expiration mechanism for polls.
+- **Enhanced Security**: Implement additional security measures to prevent tampering.
+- **UI Integration**: Develop a user-friendly interface for interacting with the smart contract.
+
 ## Features
 - Create a voting poll with multiple options.
 - Cast votes for a specific option in a poll.
@@ -52,7 +61,7 @@ This project implements a simple voting system on the Aptos blockchain using Mov
 ### Module Address
 `0xc65df22fe8951577e17c07bd2f87193accf91f501055287e9bdbcaecccf35d17`
 
-![Transaction Overview](attachments/transaction-overview.png) <!-- Replace with the actual relative path if different -->
+![Transaction Overview](.aptos/attachments/transaction.png) <!-- Ensure the file exists in the .aptos/attachments folder -->
 
 ### Functions
 - **create_poll**  
@@ -81,6 +90,11 @@ This project implements a simple voting system on the Aptos blockchain using Mov
   - `votes`: A vector of vote counts for each option.  
   - `voters`: A vector of addresses of users who have voted.  
   - `is_active`: A boolean indicating if the poll is active.
+
+## References
+- [Aptos CLI Download (Using Python)](https://youtu.be/wxweNqxIvPg)
+- [Aptos Smart Contract Deployment](https://youtu.be/AGy1YPZ-e64)
+- [Rise In Submission](https://www.risein.com/bootcamps/build-on-aptos-bootcamp-rcciit-kolkata)
 
 ## License
 This project is licensed under the MIT License.
